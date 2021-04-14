@@ -1,0 +1,82 @@
+$bg-color: red;
+$primary1: rgb(236, 232, 232);
+$accent1: rgb(245, 243, 243);
+$primary2: rgb(251, 251, 251);
+$primary-text: rgb(32, 32, 32);
+$test-color: rgb(221, 210, 210);
+@import url('https://fonts.google.com/css?family=Space+Mono');
+@import url('https://fonts.google.com/css?family=Roboto');
+$nav-font: 'Space Mono', monospace;
+$p-font: 'Roboto', sans-serif;
+$title-font: 'Noto Sans JP', sans-serif;
+
+//MAIN STUFF
+body{
+  margin: 1rem;
+  background: $primary1;
+  display: flex;
+  justify-content: center;
+}
+header{background: $primary1;}
+a{color: unset;}
+nav{
+  .active-page{
+    font-weight: 800;
+  }
+}
+p{font-family: $p-font; font-size: 13pt;}
+
+//CONTAINERS
+.main-container{
+  font-family: $p-font;
+  background: $primary1;
+  width: 100%;
+}
+.section-container{
+  padding: .7rem 0;
+  
+}
+
+
+//TEXT :: FONTS AND STUFF
+.title-this{font-family: $nav-font; font-weight: 600;}
+.top-font{
+  font-family: $nav-font;
+  font-size: 13pt;
+  font-weight: 500;
+  line-height: unset;
+  margin: 0;
+}
+.grayed-text{
+  opacity: 1;
+}
+.hover-text:hover{
+  color: $primary-text;
+  opacity: 1;
+  transition: all 0.2s linear 0s;
+}
+
+
+
+/* DESKTOP FORMAT */
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .main-container{
+    width: 40%;
+  }
+
+  //CONTAINERS
+  .section-container{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background: $accent1;
+
+  }
+
+  //TEXT :: FONTS AND STUFF
+  .grayed-text{
+    opacity: .4;
+  }
+  
+}
