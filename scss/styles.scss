@@ -3,6 +3,7 @@ $primary1: rgb(236, 232, 232);
 $accent1: rgb(245, 243, 243);
 $primary2: rgb(251, 251, 251);
 $primary-text: rgb(32, 32, 32);
+$link-font:rgb(226, 107, 133);
 $test-color: rgb(221, 210, 210);
 @import url('https://fonts.google.com/css?family=Space+Mono');
 @import url('https://fonts.google.com/css?family=Roboto');
@@ -12,19 +13,21 @@ $title-font: 'Noto Sans JP', sans-serif;
 
 //MAIN STUFF
 body{
-  margin: 1rem;
+  margin: 2rem 0;
   background: $primary1;
   display: flex;
   justify-content: center;
 }
 header{background: $primary1;}
-a{color: unset;}
+a{color: unset;} a:hover{color: $link-font;}
 nav{
   .active-page{
+    color: $link-font;
     font-weight: 800;
   }
 }
 p{font-family: $p-font; font-size: 13pt;}
+main{margin: 4rem 0;}
 
 //CONTAINERS
 .main-container{
@@ -36,7 +39,10 @@ p{font-family: $p-font; font-size: 13pt;}
   padding: .7rem 0;
   
 }
-
+.project-card{
+  border: .5px solid rgb(56, 56, 56) ;
+  border-radius: 4px;
+}
 
 //TEXT :: FONTS AND STUFF
 .title-this{font-family: $nav-font; font-weight: 600;}
