@@ -1,7 +1,7 @@
 @import url("https://fonts.google.com/css?family=Space+Mono");
 @import url("https://fonts.google.com/css?family=Roboto");
 body {
-  margin: 1rem;
+  margin: 2rem 0;
   background: #ece8e8;
   display: flex;
   justify-content: center; }
@@ -12,12 +12,19 @@ header {
 a {
   color: unset; }
 
+a:hover {
+  color: #e26b85; }
+
 nav .active-page {
+  color: #e26b85;
   font-weight: 800; }
 
 p {
   font-family: "Roboto", sans-serif;
   font-size: 13pt; }
+
+main {
+  margin: 4rem 0; }
 
 .main-container {
   font-family: "Roboto", sans-serif;
@@ -26,6 +33,10 @@ p {
 
 .section-container {
   padding: .7rem 0; }
+
+.project-card {
+  border: 0.5px solid #383838;
+  border-radius: 4px; }
 
 .title-this {
   font-family: "Space Mono", monospace;
@@ -50,7 +61,7 @@ p {
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .main-container {
-    width: 40%; }
+    max-width: 640px; }
   .section-container {
     margin: 1rem;
     padding: 1rem;
