@@ -19,7 +19,9 @@ body{
   display: flex;
   justify-content: center;
 }
-header{background: $primary1;}
+header{
+  background: $primary1;
+}
 a{color: unset;} a:hover{color: $link-font;}
 nav{
   .active-page{
@@ -50,12 +52,12 @@ ul,li { list-style-type: none;
 .section-container{
   padding: .7rem 0;
   
+  
 }
 .project-card{
   border: .5px solid rgba(56, 56, 56, 0.219) ;
   border-radius: 4px;
   padding: 1rem;
-  transition: all 0.3s linear 0s;
 }
 
 
@@ -68,7 +70,6 @@ ul,li { list-style-type: none;
   font-size: 13pt;
   font-weight: 500;
   line-height: unset;
-  margin: 0;
 }
 .grayed-text{
   opacity: 1;
@@ -79,8 +80,9 @@ ul,li { list-style-type: none;
   transition: all 0.2s linear 0s;
 }
 .more-info{
-  padding-left: .8rem;
-  border-left: 5px solid $link-font;
+  padding-left: .4rem;
+  margin-left: .4rem;
+  border-left: 3.5px solid $link-font;
   font-family: $noto-sans-jp;
   font-size: 13px;
 }
@@ -96,8 +98,11 @@ ul,li { list-style-type: none;
   .section-container{
     margin: 1rem;
     padding: 1rem;
-    border-radius: 4px;
+    border-top-left-radius: 25px;
     background: $accent1;
+  }
+  .project-card{
+    transition: all 0.3s linear 0s;
   }
   .project-card:hover{
     width: 100%;
