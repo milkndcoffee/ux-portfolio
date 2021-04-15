@@ -81,17 +81,16 @@ ul, li {
   .main-container {
     max-width: 640px; }
   .section-container {
-    margin: 1rem 0;
+    margin: 1rem;
     padding: 1rem;
     border-top-left-radius: 25px;
     background: #f5f3f3; }
   .project-card {
     transition: all 0.3s linear 0s; }
   .project-card:hover {
-    width: 100%;
-    max-width: 640px;
+    height: 350px;
     opacity: 1;
-    transform: scale(1.5);
-    transition: all 0.3s linear 0s; }
+    transition: all 0.3s linear 0s; 
+  }
   .grayed-text {
     opacity: .4; } }

@@ -105,10 +105,8 @@ ul,li { list-style-type: none;
     transition: all 0.3s linear 0s;
   }
   .project-card:hover{
-    width: 100%;
-    max-width: 640px;
+    height: 350px;
     opacity: 1;
-    transform: scale(3);
     transition: all 0.3s linear 0s;
   }
 
